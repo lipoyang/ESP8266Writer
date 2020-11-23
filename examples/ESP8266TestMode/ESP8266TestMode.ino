@@ -1,13 +1,13 @@
 #include <ESP8266Writer.h>
 
 // ESP8266Writer mode pin
-#define WRITER_MODE_PIN  21
+#define TEST_MODE_PIN  21
 
 // setup routine
 void setup()
 {
-    // begin writer mode if WRITER_MODE_PIN is LOW
-    ESP8266Writer.begin(WRITER_MODE_PIN);
+    // begin test mode if WRITER_MODE_PIN is LOW
+    ESP8266Writer.beginTest(TEST_MODE_PIN);
     
     // normal operation
     Serial.begin(115200);
